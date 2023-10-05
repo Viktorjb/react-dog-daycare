@@ -86,7 +86,7 @@ const Title = () => {
   return (
     <div>
       <div className="title">
-        <h2>Doggy Daycare</h2>
+        <img src='src/assets/doggydaycare.png' alt='Welcome to Doggy Daycare' id="titleimg"/>
       </div>
       <div className="spacer">
         <h2></h2>

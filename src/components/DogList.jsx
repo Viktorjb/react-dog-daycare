@@ -36,10 +36,10 @@ async function fetchData (props){
     const status = document.createElement('h2');
     if(dog.present){
       status.className = 'isin';
-      status.innerHTML = 'Är hos oss';
+      status.innerHTML = 'På plats';
     } else {
       status.className = 'isout';
-      status.innerHTML = 'Är ej hos oss'
+      status.innerHTML = 'Ej på plats'
     }
 
     const infoButton = document.createElement('button');

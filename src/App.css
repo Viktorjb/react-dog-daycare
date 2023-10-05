@@ -105,10 +105,14 @@
 }
 
 .isout {
-  color: #ff5050;
+  color: #bc5151;
 }
 
+#titleimg {
+  height: 4em;
+  width: auto;
+}
 
-img {
+#dogimg {
   width: 16em;
 }

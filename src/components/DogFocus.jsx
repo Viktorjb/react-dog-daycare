@@ -16,7 +16,7 @@ const DogFocus = (props) => {
             </div>
             <div className="basic">
                 <div className="imageframe">
-                <img src={props.dog.img} alt="Image of dog"/> 
+                <img src={props.dog.img} alt="Image of dog" id="dogimg"/> 
                 </div>
                 <h3>{props.dog.name} {gender}</h3>
                 <p>{props.dog.age} år gammal, av rasen {props.dog.breed}.</p>
