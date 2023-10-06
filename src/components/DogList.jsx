@@ -1,6 +1,6 @@
 const apiUrl = 'https://api.jsonbin.io/v3/b/651f12aa12a5d3765987bea2'
 
-
+//Main API-call
 async function fetchData (props){
     const response = await fetch(apiUrl);
       console.log(response);

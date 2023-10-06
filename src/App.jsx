@@ -11,76 +11,24 @@ const apiUrl = 'https://api.jsonbin.io/v3/b/651f12aa12a5d3765987bea2'
 
 let list = [];
 
-async function fetchData (){
-  const response = await fetch(apiUrl);
-    console.log(response);
-
-    const dogData = await response.json();
-    console.log('actual data:', dogData);
-
-    list = dogData.record;
-
-    createDogs(list);
-
-    return Array.from(dogData.record);
-}
-
-const createDogs = (dogs) => {
-
-  const dogContainer = document.querySelector('#dogs');
-
-  dogs.forEach(dog => {
-    const dogElement = createDogElement(dog);
-    dogContainer.appendChild(dogElement);
-  })
-}
-
-
-const createDogElement = (dog) => {
-  const dogElement = document.createElement('div');
-  dogElement.className = 'basic';
-
-  const dogName = document.createElement('h3');
-  dogName.innerHTML = dog.name +', ' + dog.breed + '. Ägare: ' + dog.owner.name;
-
-  const status = document.createElement('h2');
-  if(dog.present){
-    status.className = 'isin';
-    status.innerHTML = 'Är hos oss';
-  } else {
-    status.className = 'isout';
-    status.innerHTML = 'Är ej hos oss'
-  }
-
-  dogElement.appendChild(dogName);
-  dogElement.appendChild(status);
-
-  return dogElement;
-}
 
 
 
-
-
-
+// Side menu icon, currently unused
 const MenuIcon = () => {
   return (
     <div className="darkaccent">
-      
       <div className="darkline">
-      
       </div>
       <div className="darkline">
-
       </div>
       <div className="darkline">
-        
       </div>
     </div>
   )
 }
 
-
+//Title bar on top of the page
 const Title = () => {
 
   return (
@@ -110,6 +58,7 @@ const Title = () => {
   )
 }
 
+//Test object
 const Thing = () => {
 
   return (

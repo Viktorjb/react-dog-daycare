@@ -1,3 +1,4 @@
+//Information about single dog
 const DogFocus = (props) => {
     let gender = '?'
 
